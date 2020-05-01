@@ -14,14 +14,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    if (Auth::check()) {
+        return view('dashboard');
+    } else {
+        return view('welcome');
+    }
 });
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');
 
 Route::group(['middleware' => 'auth'], function () {

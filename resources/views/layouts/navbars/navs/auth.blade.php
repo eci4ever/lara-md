@@ -16,14 +16,15 @@
             </form>
             <ul class="navbar-nav">
                 <li class="nav-item">
+                    <a href="{{ route('profile.edit') }}">{{ Auth::user()->name }}</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="{{ route('home') }}">
                         <i class="material-icons">dashboard</i>
                         <p class="d-lg-none d-md-block">
                             {{ __('Stats') }}
                         </p>
                     </a>
-                </li>
-                <li class="nav-item dropdown">
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link" href="#pablo" id="navbarDropdownProfile" data-toggle="dropdown"
