@@ -1,0 +1,16 @@
+{
+    "editor.formatOnSave": true,
+    "files.associations": {
+
+        ".blade.php": "html"
+    },
+    "beautify.config": "",
+    "beautify.language": {
+        "html": [
+            "blade",
+            "html"
+        ]
+    },
+    "php.validate.enable": false,
+    "php.suggest.basic": false,
+}
