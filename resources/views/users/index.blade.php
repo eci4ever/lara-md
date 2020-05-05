@@ -1,4 +1,4 @@
-@extends('layouts.app', ['activePage' => 'user', 'titlePage' => __('User')])
+@extends('layouts.app', ['activePage' => 'user', 'titlePage' => __('EditUser')])
 
 @section('content')
 
@@ -14,7 +14,7 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-12 text-right">
-                                <a href="#" class="btn btn-sm btn-primary">Add user</a>
+                                 <a href="{{ route('user.create') }}" class="btn btn-sm btn-primary">Add user</a>
                             </div>
                         </div>
                         <div class="table-responsive">
@@ -48,7 +48,7 @@
                                             {{ $user->created_at->format('j F Y') }}
                                         </td>
                                         <td class="td-actions text-right">
-                                            <a rel="tooltip" class="btn btn-success btn-link" href="#"
+                                            <a rel="tooltip" class="btn btn-success btn-link" href="{{ route('user.edit', $user->id) }}"
                                                 data-original-title="" title="">
                                                 <i class="material-icons">edit</i>
                                                 <div class="ripple-container"></div>

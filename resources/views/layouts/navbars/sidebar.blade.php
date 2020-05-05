@@ -35,13 +35,13 @@
                             </a>
                         </li>
                         <li class="nav-item{{ $activePage == 'role' ? ' active' : '' }}">
-                            <a class="nav-link" href="{{ route('role.index') }}">
+                            <a class="nav-link" href="#">
                                 <span class="sidebar-mini"> RL </span>
                                 <span class="sidebar-normal"> {{ __('Role') }} </span>
                             </a>
                         </li>
                         <li class="nav-item{{ $activePage == 'permission' ? ' active' : '' }}">
-                            <a class="nav-link" href="{{ route('permission.index') }}">
+                            <a class="nav-link" href="#">
                                 <span class="sidebar-mini"> PM </span>
                                 <span class="sidebar-normal"> {{ __('Permission') }} </span>
                             </a>
